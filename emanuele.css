@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.dati-presentazione {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+
+blockquote {
+    font-size: 40px;
+}
+
+strong {
+    color: blue;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+}
+
+.img-ball {
+    width: 50%;
+}
+
+.img-pc-students {
+    width: 50%;
+}
