@@ -50,4 +50,36 @@ body {
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
 }
+/* End of the hero section */
+/* About Section */
+section.about {
+    width: inherit;
+    height: 100vh;
+    background-color: #6f7a8a;
+    text-align: center;
+}
+.heading {
+    padding: 3rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.heading ::first-letter {
+    color: #4D5466;
+}
+.about_content {
+    width: 70%;
+    height: 70%;
+    background-color:#4D5466 ;
+    margin: 0 auto;
+}
+.about_content p {
+    padding: 8em 4em;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+/* End of the about section */
+
 
