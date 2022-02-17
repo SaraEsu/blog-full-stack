@@ -2,6 +2,10 @@
     --black: #161616;
 }
 
+* {
+    cursor:url(http://www.rw-designer.com/cursor-extern.php?id=173622), auto;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -12,6 +16,7 @@ body {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 .main-box {
@@ -35,17 +40,17 @@ a {
     background-color: var(--black);
 }
 
-.list-box li {
-    display: inline;
-    justify-content: space-evenly;
+.button {
+    font-family: 'Press Start 2P';
+    margin-bottom: 20px;
+    padding: 20px;
     color: #c8f9ff;
+    background-color: #161616;
     border: solid 2px #556cc9;
-    padding: 15px 20px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+.button:hover {
+    color: var(--black);
+    background-color: rgba(221,81,126,1);
+    transition: all 0.5s ease-in-out;
 }
