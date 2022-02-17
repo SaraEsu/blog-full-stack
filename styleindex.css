@@ -40,9 +40,12 @@ a {
     justify-content: space-evenly;
     color: #c8f9ff;
     border: solid 2px #556cc9;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 .row {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
 }
