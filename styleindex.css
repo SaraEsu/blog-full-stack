@@ -18,7 +18,7 @@ a {
 .main-box {
     display: block;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 130px;
     padding: 20px;
     width: 900px;
     text-align: center;
@@ -32,14 +32,14 @@ a {
     opacity: 0;
     animation: fadeInFromRight 1s ease-in-out 0.2s 1 normal forwards;
     transform: translateX(400px);
-
 }
 
 .nav-box {
     display: block;
     margin: auto;
     margin-top: 40px;
-    padding: 20px;
+    padding: 60px;
+    border: dashed 3px #c8f9ffc2;
     background-color: var(--black);
     filter: drop-shadow(10px 10px 0px #4444dd);
     opacity: 0;
