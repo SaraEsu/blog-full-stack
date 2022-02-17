@@ -26,14 +26,18 @@ a {
 
 .main-box h1 {
     color: #f5a554;
+    font-size: 42px;
     text-shadow: 3px 3px var(--black);
 }
 
 .list-box {
     display: block;
     margin: auto;
+    margin-top: 40px;
     padding: 20px;
     background-color: var(--black);
+    filter: drop-shadow(10px 10px 0px #4444dd);
+
 }
 
 .button {
@@ -46,7 +50,8 @@ a {
 }
 
 .button:hover {
-    color: var(--black);
-    background-color: rgba(221,81,126,1);
-    transition: all 0.5s ease-in-out;
+    color: white;
+    background: linear-gradient(342deg, rgba(221,81,126,1) 35%, rgba(230,142,53,1) 68%);
+    filter: drop-shadow(5px 5px 0px #4444dd);
+    transition: all 0.3s ease-in-out;
 }
