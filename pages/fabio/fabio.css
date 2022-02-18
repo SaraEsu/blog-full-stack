@@ -1,0 +1,16 @@
+/*  resets.css contains global resets. 
+    Keep it always the first import. */
+@import "css/resets.css";
+
+/*  layout.css contains main components style and structure */
+@import "css/layout.css";
+
+/*  components.css contains smaller components style and structure */
+@import "css/components.css";
+
+/*  typography.css contains classes for various text types */
+@import "css/typography.css";
+
+/*  helpers.css contains helper classes.
+    Keep it always the last import. */
+@import "css/helpers.css";

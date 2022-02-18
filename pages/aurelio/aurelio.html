@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classe Full Stack #2 - Aurelio</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>    
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="logo">
+                <img class="imglogo" src="studioelaborazioni.png" alt="Logo">
+            </div>
+                <ul class="menu">
+                    <li><a href="pages/fabio.html">Fabio</a></li>
+                    <li><a href="#">Marco</a></li>
+                    <li><a href="#">Emanuele</a></li>
+                    <li><a href="#">Luigi</a></li>
+                    <li><a href="#">Sara</a></li>
+                    <li><a href="aurelio/aurelio.html" class="button">Aurelio</a></li>
+                </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+        </div>
+    
+        <div class="hero">
+            <div class="hero__content reveal">
+                <p class="intro-text">Blog della Classe Full Stack #2</p>
+                <h1 class="big-text">Aurelio Zaffora</h1>
+                <a href="" class="button">Contattami</a>
+            </div>
+            <video autoplay muted loop id="video-back">
+                <source src="video-back.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div class="poster mt-3">
+                <div class="poster__img reveal">
+                    <img src="bg-video.png" alt="">
+                </div>
+            <div class="poster__content reveal">
+                <h3 class="big-text">Sviluppatore full stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, rerum nulla aperiam pariatur quisquam a quia! Distinctio, aperiam. Doloremque unde voluptatem officia, qui minus recusandae temporibus eos quae praesentium?</p>
+                <a href="" class="button">Contattami</a>
+            </div>
+        </div>
+    
+        <div class="bg-cover mt-3">
+            <div class="bg-cover__title reveal">
+                <h3 class="big-text tw">15 anni a supporto delle persone e delle aziende</h3>
+            </div>
+            <div class="bg-cover__text reveal">
+                <h4 class="normal-text tw">Contabilità</h4>
+                <p class="tw">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum quas aperiam dolorum! Debitis illum accusantium eaque? Labore id est sunt aperiam ratione ex adipisci, iusto nobis optio nemo mollitia!</p>
+    
+                <h4 class="normal-text tw">Consulenza aziendale</h4>
+                <p class="tw">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum quas aperiam dolorum! Debitis illum accusantium eaque? Labore id est sunt aperiam ratione ex adipisci, iusto nobis optio nemo mollitia!</p>
+    
+                <h4 class="normal-text tw">Programmazione</h4>
+                <p class="tw">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum quas aperiam dolorum! Debitis illum accusantium eaque? Labore id est sunt aperiam ratione ex adipisci, iusto nobis optio nemo mollitia!</p>
+            </div>
+    
+        </div>
+    
+        <div class="grid mt-3">
+            <div class="col">
+                <h3 class="big-text reveal">Lorem ipsum <br> sia amet</h3>
+            </div>
+            <div class="col mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ex vel expedita quos eaque adipisci esse impedit? Reiciendis, saepe! Voluptate at sed ducimus dolorem mollitia velit. Atque exercitationem dolorem aspernatur?
+    
+            </div>
+        </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            /* open panel */
+            $(".hamburger").on('click', function(){
+                $(".menu").toggleClass("menu--open");
+            })
+        })
+
+        ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1500, easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)', interval: 600 });
+
+        ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)', interval: 600, scale: 0.65, mobile: false });
+
+
+    </script>
+
+    </body>
+</html>

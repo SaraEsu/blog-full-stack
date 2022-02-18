@@ -1,0 +1,18 @@
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #fdfdfd;
+    
+    background: url("../img/background.jpg");
+    background-position-x: 30vw;
+
+    padding-right: 40vw;
+    cursor: default;
+}
