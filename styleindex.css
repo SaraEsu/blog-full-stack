@@ -5,47 +5,88 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(70,30,82);
-    background: linear-gradient(90deg, rgba(70,30,82,1) 0%, rgba(221,81,126,1) 23%, rgba(230,142,53,1) 44%, rgba(85,108,201,1) 66%, rgba(122,152,238,1) 87%);
+    background: linear-gradient(90deg, rgba(70,30,82,0.8) 0%, rgba(221,81,126,0.8) 23%, rgba(230,142,53,0.8) 44%, rgba(85,108,201,0.8) 66%, rgba(122,152,238,0.8) 87%), 
+    url('https://wallpaper.dog/large/10981780.jpg') no-repeat center center / cover;
     font-family: 'Press Start 2P', cursive;
 }
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 .main-box {
     display: block;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 130px;
     padding: 20px;
     width: 900px;
     text-align: center;
 }
 
 .main-box h1 {
+    margin: 0px;
     color: #f5a554;
+    font-size: 42px;
     text-shadow: 3px 3px var(--black);
+    opacity: 0;
+    animation: fadeInFromRight 1s ease-in-out 0.2s 1 normal forwards;
+    transform: translateX(400px);
 }
 
-.list-box {
+.nav-box {
     display: block;
     margin: auto;
-    padding: 20px;
+    margin-top: 40px;
+    padding: 60px;
+    border: dashed 3px #c8f9ffc2;
     background-color: var(--black);
+    filter: drop-shadow(10px 10px 0px #4444dd);
+    opacity: 0;
+    animation: fadeInFromLeft 1s ease-in-out 0.2s 1 normal forwards;
+    transform: translateX(400px);
 }
 
-.list-box li {
-    display: inline;
-    justify-content: space-evenly;
+.nav {
+    margin-top: 20px;
+}
+
+.button {
+    font-family: 'Press Start 2P';
+    margin-bottom: 20px;
+    padding: 20px;
     color: #c8f9ff;
+    background-color: #161616;
     border: solid 2px #556cc9;
-    padding: 15px 20px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+.button:hover {
+    color: white;
+    background: linear-gradient(342deg, rgba(221,81,126,1) 35%, rgba(230,142,53,1) 68%);
+    filter: drop-shadow(5px 5px 0px #4444dd);
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+    opacity: 0;
+    transform: translateX(400px);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+    opacity: 0;
+    transform: translateX(-400px);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateX(0px);
+    }
 }
