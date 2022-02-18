@@ -1,0 +1,42 @@
+/* HELPER CLASSES - MISC PROPERTIES */
+.w-max-content  {width: max-content;}
+.w-100          {width: 100%;}
+.block-center   {margin: 0 auto;}
+
+/* HELPER CLASSES - FLEX */
+/* FLEX - LAYOUT */
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FLEX - JUSTIFY CONTENT */
+.justify-center     {justify-content: center;}
+.justify-start      {justify-content: flex-start;}
+.justify-end        {justify-content: flex-end;}
+.justify-around     {justify-content: space-around;}
+.justify-between    {justify-content: space-between;}
+.justify-evenly     {justify-content: space-evenly;}
+
+/* FLEX - ALIGN ITEMS */
+.align-center       {align-items: center;}
+.align-start        {align-items: flex-start;}
+.align-end          {align-items: flex-end;}
+.align-stretch      {align-items: stretch;}
+.align-baseline     {align-items: baseline;}
+
+/* FLEX - ALIGN SELF */
+.align-self-center  {align-self: center;}
+.align-self-start   {align-self: flex-start;}
+.align-self-end     {align-self: flex-end;}
+.align-self-stretch {align-self: stretch;}
+.align-self-baseline{align-self: baseline;}
